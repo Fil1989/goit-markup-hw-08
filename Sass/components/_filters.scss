@@ -1,0 +1,31 @@
+.filter-of-works ul {
+    display: flex;
+    justify-content: center;
+    margin-top: 94px;
+    margin-bottom: 50px;
+  }
+  .filter-of-works li {
+    margin-right: 8px;
+    border: 1px solid $gray;
+    background: $gray;
+    border-radius: 4px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    padding: 6px 22px;
+
+    &:hover,
+  &:focus {
+    background: $blue;
+    color: $white;
+    cursor: pointer;
+  }
+  &:last-child{
+    margin-right: 0px;
+
+  }
+  }
+  
+  
+  

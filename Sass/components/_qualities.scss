@@ -1,0 +1,43 @@
+.qualities {
+    font-size: 14px;
+    padding: 94px 15px;
+    letter-spacing: 0.03em;
+    font-weight: normal;
+  }
+  .qualities h3 {
+    text-transform: uppercase;
+    font-size: 14px;
+    margin: 0 0 10px 0px;
+  }
+  .qualities ul {
+    display: flex;
+  }
+  .special-aspects {
+    width: 270px;
+    margin: 0 30px 0 -5px;
+  
+   &::before {
+    content: "";
+    display: block;
+    width: 270px;
+    height: 120px;
+    margin-bottom: 30px;
+    background-color: $gray;
+    background-position: center top 30px;
+    border-radius: 4px;
+    background-repeat: no-repeat;
+  }
+  &:nth-child(1)::before {
+    background-image: url(../images/icons/details.png);
+  }
+  &:nth-child(2)::before {
+    background-image: url(../images/icons/clock.png);
+  }
+  &:nth-child(3)::before {
+    background-image: url(../images/icons/diagram.png);
+  }
+  &:nth-child(4)::before {
+    background-image: url(../images/icons/technologies.png);
+    margin-right: 0px;
+  }
+  }

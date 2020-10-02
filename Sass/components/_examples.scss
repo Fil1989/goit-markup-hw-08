@@ -1,0 +1,59 @@
+/* -----Портфолио начало------- */
+
+.examples ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 64px;
+  }
+  .example {
+    margin: 0 30px 30px 0;
+    background-image: url(../images/container-item.png);
+    height: 404px;
+    position: relative;
+
+    &:hover,
+  &:focus {
+    cursor: pointer;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
+
+  &:nth-child(3n) {
+    margin: 0 0px 30px 0;
+  }
+  }
+  .large-descr {
+    overflow: hidden;
+    position: relative;
+    width: 370px;
+    height: 294px;
+  }
+  .large-descr > p {
+    position: absolute;
+    background-color: rgba(33, 150, 243, 0.7);
+    color: $white;
+    width: 370px;
+    height: 294px;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    padding: 15px;
+
+    .example:hover &,
+    .example:focus & {
+      opacity: 1;
+      transform: translateY(-301px);
+    }
+  }
+
+  
+  .about-work {
+    letter-spacing: 0.06em;
+    text-indent: 24px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+  .about-work h3 {
+    display: block;
+    max-width: 346px;
+  }
+  /* -----Портфолио конец------- */
