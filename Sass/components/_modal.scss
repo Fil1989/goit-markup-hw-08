@@ -84,8 +84,15 @@
     font-size: 14px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
+
+   
 &:focus{
-      outline-color: $blue;}
+      outline-color: $blue;
+
+      &::placeholder{
+        color:transparent;
+      }
+    }
   }
   .field > input {
     height: 40px;

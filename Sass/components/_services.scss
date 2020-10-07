@@ -1,7 +1,19 @@
+.what-we-do {
+  display: none;
+
+  @media screen and (min-width: 1200px){
+    display: block;
+}
+}
+
 .what-we-do ul {
-  display: flex;
+  display: block;
   justify-content: space-between;
   padding-bottom: 94px;
+
+  @media screen and (min-width: 1200px){
+    display: flex;
+}
 }
 
 .what-we-do1 {

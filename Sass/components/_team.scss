@@ -1,10 +1,18 @@
 .our-team {
     background: $gray repeat-x;
-    padding: 94px 15px;
+    padding: 60px 15px;
+
+    @media screen and (min-width: 1200px){
+      padding: 94px 15px;
+    }
   }
   
   .list-of-teammates {
+    display: block;
+
+      @media screen and (min-width: 1200px){
     display: flex;
+}
   }
   .team {
     background: $white;
@@ -12,11 +20,30 @@
       0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
     margin: 0 30px 30px 0;
-    width: 270px;
+    width: 100%;
+
+    @media screen and (min-width: 1200px){
+      width: 270px;
+    }
+  }
+
+  .team img {
+  width:100%;
+  //  height:auto;
+
+   @media screen and (min-width: 1200px){
+    width:270px;
+    height:260px;
+   }
+
   }
   .teammate {
     text-align: center;
     padding: 30px 0 30px 0;
+  
+  & h3 {
+    text-align: center;
+  }
   }
   /* начало иконки соцсетей */
   .but-icon {

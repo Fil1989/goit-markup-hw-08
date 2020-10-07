@@ -1,11 +1,19 @@
 .filter-of-works ul {
     display: flex;
+flex-wrap: wrap;
+    width: 100%;
+    margin-top: 60px;
+    margin-bottom: 25px;
+
+    @media screen and (min-width:1200px) {
     justify-content: center;
     margin-top: 94px;
     margin-bottom: 50px;
+    }
   }
   .filter-of-works li {
     margin-right: 8px;
+    margin-bottom: 15px;
     border: 1px solid $gray;
     background: $gray;
     border-radius: 4px;
@@ -23,9 +31,11 @@
   }
   &:last-child{
     margin-right: 0px;
+  }
 
+  @media screen and (min-width:1200px) {
+margin-bottom: 0;
   }
-  }
-  
+}
   
   

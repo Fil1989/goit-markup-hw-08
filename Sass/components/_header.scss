@@ -5,18 +5,21 @@ header {
 
 }
 header .container{
-    height: 80px;
+    height: 60px;
+
+    @media screen and (min-width: 1200px){
+        height: 80px;
+    }
 }
 .navv {
-    display: flex;
-    align-items: center;
+   display:none;
 
+    @media screen and (min-width: 1200px){
+        display: flex;
+        align-items: center;
+    }
 }
-.list {
-list-style-type: none;
-margin: 0;
-padding: 0;
-}
+
 .logo {
     font-size: 26px; 
   font-weight: bold;
@@ -31,8 +34,12 @@ padding: 0;
     color: $blue;
 }
 .navigation {
-    display: flex;
-    margin-left: 93px;
+    display: block;
+
+    @media screen and (min-width:1200px) {
+        display: flex;
+        margin-left: 93px;
+    }
 }
 
     .navigation a {
@@ -40,8 +47,19 @@ padding: 0;
         color: $black;
     }
     .menu-list {
+        font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 21px;
+text-align: center;
+margin-bottom: 52px;
+
+        @media screen and (min-width:1200px) {
         font-size: 14px;
     margin-right: 50px;
+    margin-bottom: 0px;
+
+        }
 
     &:last-child {
         margin-right: 0px;
@@ -87,8 +105,13 @@ top:74px;
 
 
 .header-contacts {
+    display: none;
+
+    @media screen and (min-width:1200px) {
+        
     display: flex;
     align-items: center;
+    }
 }
 .header-contacts p {
     margin-left: 50px;
@@ -130,3 +153,4 @@ top:74px;
 .phone:hover svg,  .phone:focus svg {
     fill: $blue;
 }
+
