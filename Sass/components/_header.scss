@@ -7,14 +7,15 @@ header {
 header .container{
     height: 60px;
 
-    @media screen and (min-width: 1200px){
+    @media screen and (min-width: 768px){
         height: 80px;
     }
 }
 .navv {
    display:none;
 
-    @media screen and (min-width: 1200px){
+    @media screen and (min-width: 768px){
+        height: 80px;
         display: flex;
         align-items: center;
     }
@@ -25,6 +26,12 @@ header .container{
   font-weight: bold;
     font-family: Raleway;
     font-style: normal;
+    line-height: 28px;
+letter-spacing: 0.03em;
+
+    @media screen and (max-width:1199px) {
+        font-size: 24px; 
+    }
 }
 .logo a {
     color: $black; 
@@ -36,8 +43,11 @@ header .container{
 .navigation {
     display: block;
 
-    @media screen and (min-width:1200px) {
+    @media screen and (min-width:768px) {
         display: flex;
+        margin-left: 88px;
+    }
+    @media screen and (min-width:1200px) {
         margin-left: 93px;
     }
 }
@@ -54,12 +64,14 @@ line-height: 21px;
 text-align: center;
 margin-bottom: 52px;
 
-        @media screen and (min-width:1200px) {
-        font-size: 14px;
+        @media screen and (min-width:768px) {
+        font-size: 16px;
     margin-right: 50px;
     margin-bottom: 0px;
-
         }
+        @media screen and (min-width:1200px) {
+            font-size: 14px;
+            }
 
     &:last-child {
         margin-right: 0px;
@@ -107,6 +119,12 @@ top:74px;
 .header-contacts {
     display: none;
 
+    @media screen and (min-width:768px) {
+        
+        display: block;
+        vertical-align: middle;
+        }
+
     @media screen and (min-width:1200px) {
         
     display: flex;
@@ -116,9 +134,14 @@ top:74px;
 .header-contacts p {
     margin-left: 50px;
 
-    &:first-child {
-        margin-left: 0px;
+    @media screen and (min-width:768px) {
+    font-style: 12px;
+    }
     
+        @media screen and (min-width:1200px) {
+            &:first-child {
+                margin-left: 0px;       
+             }
     }
 }
 

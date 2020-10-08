@@ -4,10 +4,18 @@ background-image: linear-gradient(rgba(47, 48, 58, 0.4) 50%, rgba(47, 48, 58, 0.
 background-repeat: no-repeat, no-repeat;
 background-position-x: center, center;
 padding-top: 88px;
-
+background-repeat: no-repeat, no-repeat;
+background-position-x: center, center;
+background-position-y: center, top 200px;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 text-align: center;
-
-
+@media screen and (max-width: 480px){
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4) 50%, rgba(47, 48, 58, 0.4) 100%), url(../images/hero-mobile.jpg);
+}
+@media screen and (min-width: 481px){
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4) 50%, rgba(47, 48, 58, 0.4) 100%), url(../images/banner-tablet.jpg);
+    background-size: cover;
+}
 @media screen and (min-width: 1200px){
    height: 600px;
    background-image: linear-gradient(rgba(47, 48, 58, 0.4) 50%, rgba(47, 48, 58, 0.4) 100%), url(../images/webstudio-banner.jpg);
@@ -27,7 +35,6 @@ text-align: center;
 letter-spacing: 0.06em;
 text-transform: uppercase;
 color: $white;
-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 
 @media screen and (min-width: 1200px){
     font-size: 44px;
