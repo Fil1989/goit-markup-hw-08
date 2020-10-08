@@ -1,36 +1,65 @@
 /* -----Портфолио начало------- */
 
 .examples ul {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    margin-bottom: 64px;
-    width: 100%
+    display: block;
+    padding-bottom: 30px;
+
+    @media screen and (min-width:768px) {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    @media screen and (min-width:1200px) {
+    padding-bottom: 64px;
+    }
   }
   .example {
-    margin: 0 30px 30px 0;
     border: 1px solid #EEEEEE;
     height: 404px;
     position: relative;
-
     
+    @media screen and (max-width:480px) {
+      width: 100%;
+margin-bottom: 30px;
+    }
+  
+    @media screen and (min-width:481px) {
+    width: 450px;
+    margin-bottom: 30px;
+    margin-right: auto;
+    }
+  
+    @media screen and (min-width:768px) {
+  width: 354px;
+  margin-right: 30px;
+  margin-left: 0;
+
+&:nth-child(2n) {
+  margin-right: 0px;
+}
+
+    }
+  
+    @media screen and (min-width:1200px) {
+      width:370px;
+      // margin-right: 30px;
+
+    }
+
     &:hover,
   &:focus {
     cursor: pointer;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
       1px 4px 6px rgba(0, 0, 0, 0.16);
   }
+  &:nth-child(2n) {
+    margin-right: 30px;
+  }
 
   &:nth-child(3n) {
-    margin: 0 0px 30px 0;
-  }
-  @media screen and (max-width:480px) {
-    width:100%;
-    margin-right: 0;
-  }
-  @media screen and (min-width:1200px) {
-    width:370px;
-  }
+    margin-right: 0px;
+    }
   }
   .example img {
     width: 100%;
