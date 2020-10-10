@@ -895,8 +895,9 @@ header .container {
 }
 
 footer {
+  display: block;
   height: auto;
-  background: url(../images/banner.png) repeat-x, url(../images/banner.png) repeat-y;
+  background: url(../images/banner.png) repeat-x;
   color: #ffffff;
   padding: 60px 0px 60px 0px;
   text-align: center;
