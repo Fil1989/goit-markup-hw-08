@@ -48,6 +48,26 @@ body {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .flexbox-footer {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .flexbox-footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
 h1,
 h2,
 h3,
@@ -906,7 +926,7 @@ footer p {
   margin-top: 60px;
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
   .footer-head {
     margin-top: 0px;
   }
@@ -922,9 +942,15 @@ footer p {
   margin: 0 auto;
 }
 
+@media screen and (min-width: 768px) {
+  .footer-logo {
+    margin-top: 0px;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .footer-logo {
-    margin: 0;
+    margin: 0px;
   }
 }
 
@@ -936,11 +962,25 @@ footer p {
   display: block;
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
   .find-us {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .find-us {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
   }
 }
 
@@ -974,9 +1014,19 @@ footer p {
   padding: 15px 16px;
 }
 
+@media screen and (min-width: 768px) {
+  .input-subscribe {
+    width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .input-subscribe {
     width: 358px;
+    margin-left: 0;
+    margin-right: 0;
   }
 }
 
@@ -1015,6 +1065,20 @@ footer p {
   border-radius: 4px;
   cursor: pointer;
   padding-left: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .btn-subscribe {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .btn-subscribe {
+    display: inline-block;
+  }
 }
 
 .btn-subscribe svg {
