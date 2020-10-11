@@ -609,7 +609,7 @@ header .container {
 
 @media screen and (min-width: 1152px) and (max-width: 1199px) {
   .special-aspects:nth-child(2n) {
-    margin-right: 80px;
+    margin-right: 60px;
   }
 }
 
@@ -768,7 +768,7 @@ header .container {
 
 @media screen and (min-width: 1152px) and (max-width: 1199px) {
   .team:nth-child(2n) {
-    margin-right: 80px;
+    margin-right: 60px;
   }
 }
 
@@ -1480,7 +1480,7 @@ textarea#comment:focus + label svg {
 
 @media screen and (min-width: 1152px) and (max-width: 1199px) {
   .example:nth-child(2n) {
-    margin-right: 80px;
+    margin-right: 60px;
   }
 }
 
