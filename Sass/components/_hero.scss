@@ -1,6 +1,6 @@
 .maininfo {
 height: 400px;
-background-image: linear-gradient(rgba(47, 48, 58, 0.4) 50%, rgba(47, 48, 58, 0.4) 100%), url(../images/hero-mobile.jpg);
+// background-image: linear-gradient(rgba(47, 48, 58, 0.4) 50%, rgba(47, 48, 58, 0.4) 100%), url(../images/hero-mobile.jpg);
 background-repeat: no-repeat, no-repeat;
 background-position-x: center, center;
 padding-top: 88px;
@@ -9,34 +9,47 @@ background-position-x: center, center;
 background-position-y: center, top 200px;
 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 text-align: center;
+@media screen and (max-width: 480px) {
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4) 50%, rgba(47, 48, 58, 0.4) 100%), url(../images/hero-mobile.jpg);
+    }
+    @media screen and (min-width: 481px) {
+            background-image: linear-gradient(rgba(47, 48, 58, 0.4) 50%, rgba(47, 48, 58, 0.4) 100%), url(../images/banner-tablet.jpg);
+            background-size: cover;
+        }
+        @media screen and (min-width: 1200px){
+               height: 600px;
+               background-image: linear-gradient(rgba(47, 48, 58, 0.4) 50%, rgba(47, 48, 58, 0.4) 100%), url(../images/webstudio-banner.jpg);
+                background-size: 1600px, 1600px;
+            padding-top: 200px;
+            }
+        }
+// @media screen and (max-width: 480px) and (min-device-pixel-ratio: 1) {
+//     background-image: linear-gradient(rgba(47, 48, 58, 0.4) 50%, rgba(47, 48, 58, 0.4) 100%), url(../images/hero-mobile.jpg);
+// }
+// @media screen and (max-width: 480px) and (min-device-pixel-ratio: 2) {
+//     background-image: linear-gradient(rgba(47, 48, 58, 0.4) 50%, rgba(47, 48, 58, 0.4) 100%), url(../images/hero-mobile@2x.jpg);
+// }
+// @media screen and (min-width: 481px) and (min-device-pixel-ratio: 1){
+//     background-image: linear-gradient(rgba(47, 48, 58, 0.4) 50%, rgba(47, 48, 58, 0.4) 100%), url(../images/banner-tablet.jpg);
+//     background-size: cover;
+// }
+// @media screen and (min-width: 481px) and (min-device-pixel-ratio: 2){
+//     background-image: linear-gradient(rgba(47, 48, 58, 0.4) 50%, rgba(47, 48, 58, 0.4) 100%), url(../images/banner-tablet@2x.jpg);
+//     background-size: cover;
+// }
+// @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 1){
+//    height: 600px;
+//    background-image: linear-gradient(rgba(47, 48, 58, 0.4) 50%, rgba(47, 48, 58, 0.4) 100%), url(../images/webstudio-banner.jpg);
+//     background-size: 1600px, 1600px;
+// padding-top: 200px;
+// }
+// @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2){
+//     height: 600px;
+//     background-image: linear-gradient(rgba(47, 48, 58, 0.4) 50%, rgba(47, 48, 58, 0.4) 100%), url(../images/webstudio-banner@2x.jpg);
+//      background-size: 1600px, 1600px;
+//  padding-top: 200px;
+//  }
 
-@media screen and (max-width: 480px) and (min-device-pixel-ratio: 1) {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4) 50%, rgba(47, 48, 58, 0.4) 100%), url(../images/hero-mobile.jpg);
-}
-@media screen and (max-width: 480px) and (min-device-pixel-ratio: 2) {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4) 50%, rgba(47, 48, 58, 0.4) 100%), url(../images/hero-mobile@2x.jpg);
-}
-@media screen and (min-width: 481px) and (min-device-pixel-ratio: 1){
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4) 50%, rgba(47, 48, 58, 0.4) 100%), url(../images/banner-tablet.jpg);
-    background-size: cover;
-}
-@media screen and (min-width: 481px) and (min-device-pixel-ratio: 2){
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4) 50%, rgba(47, 48, 58, 0.4) 100%), url(../images/banner-tablet@2x.jpg);
-    background-size: cover;
-}
-@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 1){
-   height: 600px;
-   background-image: linear-gradient(rgba(47, 48, 58, 0.4) 50%, rgba(47, 48, 58, 0.4) 100%), url(../images/webstudio-banner.jpg);
-    background-size: 1600px, 1600px;
-padding-top: 200px;
-}
-@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2){
-    height: 600px;
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4) 50%, rgba(47, 48, 58, 0.4) 100%), url(../images/webstudio-banner@2x.jpg);
-     background-size: 1600px, 1600px;
- padding-top: 200px;
- }
-}
 .mainslogan {
 padding: 30px;
 font-family: Roboto;
