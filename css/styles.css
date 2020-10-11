@@ -855,6 +855,12 @@ header .container {
   margin-bottom: 30px;
 }
 
+@media screen and (min-width: 768px) {
+  .customer-logo a {
+    width: 29.5vw;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .customer-logo a {
     width: 170px;
