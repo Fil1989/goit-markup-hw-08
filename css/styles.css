@@ -478,21 +478,21 @@ header .container {
   text-align: center;
 }
 
-@media screen and (max-width: 480px), screen and (min-device-pixel-ratio: 1) {
+@media screen and (max-width: 480px) and (min-device-pixel-ratio: 1) {
   .maininfo {
     background-image: -webkit-gradient(linear, left top, left bottom, color-stop(50%, rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero-mobile.jpg);
     background-image: linear-gradient(rgba(47, 48, 58, 0.4) 50%, rgba(47, 48, 58, 0.4) 100%), url(../images/hero-mobile.jpg);
   }
 }
 
-@media screen and (max-width: 480px), screen and (min-device-pixel-ratio: 2) {
+@media screen and (max-width: 480px) and (min-device-pixel-ratio: 2) {
   .maininfo {
     background-image: -webkit-gradient(linear, left top, left bottom, color-stop(50%, rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero-mobile@2x.jpg);
     background-image: linear-gradient(rgba(47, 48, 58, 0.4) 50%, rgba(47, 48, 58, 0.4) 100%), url(../images/hero-mobile@2x.jpg);
   }
 }
 
-@media screen and (min-width: 481px), screen and (min-device-pixel-ratio: 1) {
+@media screen and (min-width: 481px) and (min-device-pixel-ratio: 1) {
   .maininfo {
     background-image: -webkit-gradient(linear, left top, left bottom, color-stop(50%, rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/banner-tablet.jpg);
     background-image: linear-gradient(rgba(47, 48, 58, 0.4) 50%, rgba(47, 48, 58, 0.4) 100%), url(../images/banner-tablet.jpg);
@@ -500,7 +500,7 @@ header .container {
   }
 }
 
-@media screen and (min-width: 481px), screen and (min-device-pixel-ratio: 2) {
+@media screen and (min-width: 481px) and (min-device-pixel-ratio: 2) {
   .maininfo {
     background-image: -webkit-gradient(linear, left top, left bottom, color-stop(50%, rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/banner-tablet@2x.jpg);
     background-image: linear-gradient(rgba(47, 48, 58, 0.4) 50%, rgba(47, 48, 58, 0.4) 100%), url(../images/banner-tablet@2x.jpg);
@@ -508,7 +508,7 @@ header .container {
   }
 }
 
-@media screen and (min-width: 1200px), screen and (min-device-pixel-ratio: 1) {
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 1) {
   .maininfo {
     height: 600px;
     background-image: -webkit-gradient(linear, left top, left bottom, color-stop(50%, rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/webstudio-banner.jpg);
@@ -518,7 +518,7 @@ header .container {
   }
 }
 
-@media screen and (min-width: 1200px), screen and (min-device-pixel-ratio: 2) {
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2) {
   .maininfo {
     height: 600px;
     background-image: -webkit-gradient(linear, left top, left bottom, color-stop(50%, rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/webstudio-banner@2x.jpg);
