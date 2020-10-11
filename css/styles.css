@@ -472,8 +472,6 @@ header .container {
 
 .maininfo {
   height: 400px;
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(50%, rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero-mobile.jpg);
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4) 50%, rgba(47, 48, 58, 0.4) 100%), url(../images/hero-mobile.jpg);
   background-repeat: no-repeat, no-repeat;
   background-position-x: center, center;
   padding-top: 88px;
