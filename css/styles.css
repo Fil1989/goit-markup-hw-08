@@ -607,6 +607,12 @@ header .container {
   }
 }
 
+@media screen and (min-width: 1152px) and (max-width: 1199px) {
+  .special-aspects:nth-child(2n) {
+    margin-right: 80px;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .special-aspects {
     width: 270px;
@@ -757,6 +763,12 @@ header .container {
   }
   .team:nth-child(2n) {
     margin-right: 0;
+  }
+}
+
+@media screen and (min-width: 1152px) and (max-width: 1199px) {
+  .team:nth-child(2n) {
+    margin-right: 80px;
   }
 }
 
@@ -1463,6 +1475,12 @@ textarea#comment:focus + label svg {
   }
   .example:nth-child(2n) {
     margin-right: 0px;
+  }
+}
+
+@media screen and (min-width: 1152px) and (max-width: 1199px) {
+  .example:nth-child(2n) {
+    margin-right: 80px;
   }
 }
 
