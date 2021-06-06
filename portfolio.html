@@ -1,270 +1,408 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/styles.min.css">  
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,100&display=fallback" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/styles.min.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,100&display=fallback"
+      rel="stylesheet"
+    />
 
     <title>WebStudio - разработка программного обеспечения</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <div class="container flexbox">
-            <nav class="nav-mobile" aria-label="Навигация для мобильного устройства">
-                <p class="logo"><a href="./"><span>Web</span>Studio</a></p>
-                <button class="menu-button" data-menu-button><svg class="menu-svg" aria-label="Переключатель мобильного меню"><use href="./images/sprite.svg#icon-menu" class="menu-open animation"></use>
-                    <use href="./images/sprite.svg#icon-close-menu" class="menu-close animation"></use></svg></button>
-                    <div class="mobile-menu is-open" data-menu> 
-                        <ul class="navigation list">
-                        <li class="menu-list">
-                            <a href="./" class="animation">Студия</a>
-                        </li>
-                        <li class="menu-list">
-                            <a href="./portfolio.html" style="color:#2196F3;" class="active animation">Портфолио</a>
-                        </li>
-                        <li class="menu-list">
-                            <a href="./" class="animation">Контакты</a>
-                        </li>
-                    </ul>
-                    <div class="header-contactsmob">
-                        <p><a href="mailto:info@devstudio.com" class="mail animation">
-                            <svg>
-                                <use href="./images/sprite.svg#icon-mail"></use>
-                            </svg>
-                            info@devstudio.com</a></p>
-                        
-                            <p><a href="tel:380961111111" class="phone animation">
-                                <svg>
-                                    <use href="./images/sprite.svg#icon-telephone"></use>
-                                </svg>
-                                +38096 111 11 11</a></p> 
-                            
-                            </div>
-                </div>
-                </nav>
-            <nav class="navv">
-        <p class="logo"><a href="./"><span>Web</span>Studio</a></p>
-        <ul class="navigation list">
-            <li class="menu-list">
+      <div class="container flexbox">
+        <nav
+          class="nav-mobile"
+          aria-label="Навигация для мобильного устройства"
+        >
+          <p class="logo">
+            <a href="./"><span>Web</span>Studio</a>
+          </p>
+          <button class="menu-button" data-menu-button>
+            <svg class="menu-svg" aria-label="Переключатель мобильного меню">
+              <use
+                href="./images/sprite.svg#icon-menu"
+                class="menu-open animation"
+              ></use>
+              <use
+                href="./images/sprite.svg#icon-close-menu"
+                class="menu-close animation"
+              ></use>
+            </svg>
+          </button>
+          <div class="mobile-menu is-open" data-menu>
+            <ul class="navigation list">
+              <li class="menu-list">
                 <a href="./" class="animation">Студия</a>
-            </li>
-            <li class="menu-list">
-                <a href="./portfolio.html" style="color:#2196F3;" class="active animation">Портфолио</a>
-            </li>
-            <li class="menu-list">
-                <a href="/" class="animation">Контакты</a>
-            </li>
-        </ul>
-    </nav>
-        <div class="header-contacts">
-            <p><a href="mailto:info@devstudio.com" class="mail animation">
-                <svg>
+              </li>
+              <li class="menu-list">
+                <a
+                  href="./portfolio.html"
+                  style="color: #2196f3"
+                  class="active animation"
+                  >Портфолио</a
+                >
+              </li>
+              <li class="menu-list">
+                <a href="./index.html" class="animation">Контакты</a>
+              </li>
+            </ul>
+            <div class="header-contactsmob">
+              <p>
+                <a href="mailto:info@devstudio.com" class="mail animation">
+                  <svg>
                     <use href="./images/sprite.svg#icon-mail"></use>
-                </svg>
-                info@devstudio.com</a></p>
-            
-                <p><a href="tel:380961111111" class="phone animation">
-                    <svg>
-                        <use href="./images/sprite.svg#icon-telephone"></use>
-                    </svg>
-                    +38096 111 11 11</a></p>
-                
-                </div>
+                  </svg>
+                  info@devstudio.com</a
+                >
+              </p>
+
+              <p>
+                <a href="tel:380961111111" class="phone animation">
+                  <svg>
+                    <use href="./images/sprite.svg#icon-telephone"></use>
+                  </svg>
+                  +38096 111 11 11</a
+                >
+              </p>
             </div>
+          </div>
+        </nav>
+        <nav class="navv">
+          <p class="logo">
+            <a href="./"><span>Web</span>Studio</a>
+          </p>
+          <ul class="navigation list">
+            <li class="menu-list">
+              <a href="./" class="animation">Студия</a>
+            </li>
+            <li class="menu-list">
+              <a
+                href="./portfolio.html"
+                style="color: #2196f3"
+                class="active animation"
+                >Портфолио</a
+              >
+            </li>
+            <li class="menu-list">
+              <a href="/" class="animation">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="header-contacts">
+          <p>
+            <a href="mailto:info@devstudio.com" class="mail animation">
+              <svg>
+                <use href="./images/sprite.svg#icon-mail"></use>
+              </svg>
+              info@devstudio.com</a
+            >
+          </p>
+
+          <p>
+            <a href="tel:380961111111" class="phone animation">
+              <svg>
+                <use href="./images/sprite.svg#icon-telephone"></use>
+              </svg>
+              +38096 111 11 11</a
+            >
+          </p>
+        </div>
+      </div>
     </header>
     <main>
-        <section class="filter-of-works">
-            <div class="container">
-                <h2 class="invisible">Фильтр наших работ</h2>
-            <ul class="list">
-                <li class="animation">Все</li>
-                <li class="animation">Веб-сайты</li>
-                <li class="animation">Приложения</li>
-                <li class="animation">Дизайн</li>
-                <li class="animation">Маркетинг</li>
-            </ul>
+      <section class="filter-of-works">
+        <div class="container">
+          <h2 class="invisible">Фильтр наших работ</h2>
+          <ul class="list">
+            <li class="animation">Все</li>
+            <li class="animation">Веб-сайты</li>
+            <li class="animation">Приложения</li>
+            <li class="animation">Дизайн</li>
+            <li class="animation">Маркетинг</li>
+          </ul>
         </div>
-        </section>
-<section class="examples">
-    <div class="container">
-<h2 class="invisible">Примеры наших работ</h2>
-<ul class="list">
-    <li class="example animation"><div class="large-descr">
-        <img 
-        src="./images/portfolio1_450.jpg"
-        srcset="
-        ./images/portfolio1_450.jpg  450w,
-        ./images/portfolio1_676.jpg  676w,
-        ./images/portfolio1_900.jpg  900w
-        " 
-        alt="Технокряк"
-        sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw"
-        >
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. In, aut veniam itaque est laudantium sed.
-        </p></div><div class="about-work"><h3>Технокряк</h3>
-            <p>Веб-сайт</p></div></li>
-    <li class="example animation"><div class="large-descr">
-        <img 
-        src="./images/portfolio2_450.jpg"
-        srcset="
-        ./images/portfolio2_450.jpg  450w,
-        ./images/portfolio2_676.jpg  676w,
-        ./images/portfolio2_900.jpg  900w
-        " 
-        alt="Постер New Orlean vs Golden Star"
-        sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw"
-        >
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. In, aut veniam itaque est laudantium sed.
-        </p></div><div class="about-work"><h3>Постер New Orlean vs Golden Star</h3>
-            <p>Дизайн</p></div></li>
-    <li class="example animation"><div class="large-descr">
-        <img 
-        src="./images/portfolio3_450.jpg"
-        srcset="
-        ./images/portfolio3_450.jpg  450w,
-        ./images/portfolio3_676.jpg  676w,
-        ./images/portfolio3_900.jpg  900w
-        " 
-        alt="Ресторан Seafood"
-        sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw"
-        >
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. In, aut veniam itaque est laudantium sed.
-        </p></div><div class="about-work"><h3>Ресторан Seafood</h3>
-            <p>Приложение</p></div></li>
-        <li class="example animation"><div class="large-descr">
-            <img 
-            src="./images/portfolio4_450.jpg"
-            srcset="
-            ./images/portfolio4_450.jpg  450w,
-            ./images/portfolio4_676.jpg  676w,
-            ./images/portfolio4_900.jpg  900w
-            " 
-            alt="Проект Prime"
-            sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw"
-            >
+      </section>
+      <section class="examples">
+        <div class="container">
+          <h2 class="invisible">Примеры наших работ</h2>
+          <ul class="list">
+            <li class="example animation">
+              <div class="large-descr">
+                <img
+                  src="./images/portfolio1_450.jpg"
+                  srcset="
+                    ./images/portfolio1_450.jpg 450w,
+                    ./images/portfolio1_676.jpg 676w,
+                    ./images/portfolio1_900.jpg 900w
+                  "
+                  alt="Технокряк"
+                  sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw"
+                />
+                <p>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. In,
+                  aut veniam itaque est laudantium sed.
+                </p>
+              </div>
+              <div class="about-work">
+                <h3>Технокряк</h3>
+                <p>Веб-сайт</p>
+              </div>
+            </li>
+            <li class="example animation">
+              <div class="large-descr">
+                <img
+                  src="./images/portfolio2_450.jpg"
+                  srcset="
+                    ./images/portfolio2_450.jpg 450w,
+                    ./images/portfolio2_676.jpg 676w,
+                    ./images/portfolio2_900.jpg 900w
+                  "
+                  alt="Постер New Orlean vs Golden Star"
+                  sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw"
+                />
+                <p>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. In,
+                  aut veniam itaque est laudantium sed.
+                </p>
+              </div>
+              <div class="about-work">
+                <h3>Постер New Orlean vs Golden Star</h3>
+                <p>Дизайн</p>
+              </div>
+            </li>
+            <li class="example animation">
+              <div class="large-descr">
+                <img
+                  src="./images/portfolio3_450.jpg"
+                  srcset="
+                    ./images/portfolio3_450.jpg 450w,
+                    ./images/portfolio3_676.jpg 676w,
+                    ./images/portfolio3_900.jpg 900w
+                  "
+                  alt="Ресторан Seafood"
+                  sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw"
+                />
+                <p>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. In,
+                  aut veniam itaque est laudantium sed.
+                </p>
+              </div>
+              <div class="about-work">
+                <h3>Ресторан Seafood</h3>
+                <p>Приложение</p>
+              </div>
+            </li>
+            <li class="example animation">
+              <div class="large-descr">
+                <img
+                  src="./images/portfolio4_450.jpg"
+                  srcset="
+                    ./images/portfolio4_450.jpg 450w,
+                    ./images/portfolio4_676.jpg 676w,
+                    ./images/portfolio4_900.jpg 900w
+                  "
+                  alt="Проект Prime"
+                  sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw"
+                />
 
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. In, aut veniam itaque est laudantium sed.
-        </p></div><div class="about-work"><h3>Проект Prime</h3>
-                <p>Маркетинг </p></div></li>
-        <li class="example animation"><div class="large-descr">
-            <img 
-            src="./images/portfolio5_450.jpg"
-            srcset="
-            ./images/portfolio5_450.jpg  450w,
-            ./images/portfolio5_676.jpg  676w,
-            ./images/portfolio5_900.jpg  900w
-            " 
-            alt="Проект Boxes"            
-            sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw"
-            >
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. In, aut veniam itaque est laudantium sed.
-        </p></div><div class="about-work"><h3>Проект Boxes</h3>
-                <p>Приложение</p></div></li>
-        <li class="example animation"><div class="large-descr">
-            <img 
-            src="./images/portfolio6_450.jpg"
-            srcset="
-            ./images/portfolio6_450.jpg  450w,
-            ./images/portfolio6_676.jpg  676w,
-            ./images/portfolio6_900.jpg  900w
-            " 
-            alt="Inspiration has no Borders"            
-            sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw"
-            >
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. In, aut veniam itaque est laudantium sed.
-        </p>
+                <p>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. In,
+                  aut veniam itaque est laudantium sed.
+                </p>
+              </div>
+              <div class="about-work">
+                <h3>Проект Prime</h3>
+                <p>Маркетинг</p>
+              </div>
+            </li>
+            <li class="example animation">
+              <div class="large-descr">
+                <img
+                  src="./images/portfolio5_450.jpg"
+                  srcset="
+                    ./images/portfolio5_450.jpg 450w,
+                    ./images/portfolio5_676.jpg 676w,
+                    ./images/portfolio5_900.jpg 900w
+                  "
+                  alt="Проект Boxes"
+                  sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw"
+                />
+                <p>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. In,
+                  aut veniam itaque est laudantium sed.
+                </p>
+              </div>
+              <div class="about-work">
+                <h3>Проект Boxes</h3>
+                <p>Приложение</p>
+              </div>
+            </li>
+            <li class="example animation">
+              <div class="large-descr">
+                <img
+                  src="./images/portfolio6_450.jpg"
+                  srcset="
+                    ./images/portfolio6_450.jpg 450w,
+                    ./images/portfolio6_676.jpg 676w,
+                    ./images/portfolio6_900.jpg 900w
+                  "
+                  alt="Inspiration has no Borders"
+                  sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw"
+                />
+                <p>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. In,
+                  aut veniam itaque est laudantium sed.
+                </p>
+              </div>
+              <div class="about-work">
+                <h3>Inspiration has no Borders</h3>
+                <p>Веб-сайт</p>
+              </div>
+            </li>
+            <li class="example animation">
+              <div class="large-descr">
+                <img
+                  src="./images/portfolio7_450.jpg"
+                  srcset="
+                    ./images/portfolio7_450.jpg 450w,
+                    ./images/portfolio7_676.jpg 676w,
+                    ./images/portfolio7_900.jpg 900w
+                  "
+                  alt="Издание Limited Edition"
+                  sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw"
+                />
+                <p>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. In,
+                  aut veniam itaque est laudantium sed.
+                </p>
+              </div>
+              <div class="about-work">
+                <h3>Издание Limited Edition</h3>
+                <p>Дизайн</p>
+              </div>
+            </li>
+            <li class="example animation">
+              <div class="large-descr">
+                <img
+                  src="./images/portfolio8_450.jpg"
+                  srcset="
+                    ./images/portfolio8_450.jpg 450w,
+                    ./images/portfolio8_676.jpg 676w,
+                    ./images/portfolio8_900.jpg 900w
+                  "
+                  alt="Проект LAB"
+                  sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw"
+                />
+                <p>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. In,
+                  aut veniam itaque est laudantium sed.
+                </p>
+              </div>
+              <div class="about-work">
+                <h3>Проект LAB</h3>
+                <p>Маркетинг</p>
+              </div>
+            </li>
+            <li class="example animation">
+              <div class="large-descr">
+                <img
+                  src="./images/portfolio9_450.jpg"
+                  srcset="
+                    ./images/portfolio9_450.jpg 450w,
+                    ./images/portfolio9_676.jpg 676w,
+                    ./images/portfolio9_900.jpg 900w
+                  "
+                  alt="Growing Business"
+                  sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw"
+                />
+                <p>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. In,
+                  aut veniam itaque est laudantium sed.
+                </p>
+              </div>
+              <div class="about-work">
+                <h3>Growing Business</h3>
+                <p>Приложение</p>
+              </div>
+            </li>
+          </ul>
         </div>
-            <div class="about-work"><h3>Inspiration has no Borders</h3>
-                <p>Веб-сайт</p></div></li>
-            <li class="example animation"><div class="large-descr">
-                <img 
-            src="./images/portfolio7_450.jpg"
-            srcset="
-            ./images/portfolio7_450.jpg  450w,
-            ./images/portfolio7_676.jpg  676w,
-            ./images/portfolio7_900.jpg  900w
-            " 
-            alt="Издание Limited Edition"            
-            sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw"
-            >
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. In, aut veniam itaque est laudantium sed.</p></div><div class="about-work"><h3>Издание Limited Edition</h3>
-                    <p>Дизайн</p></div></li>
-            <li class="example animation"><div class="large-descr">
-                <img 
-            src="./images/portfolio8_450.jpg"
-            srcset="
-            ./images/portfolio8_450.jpg  450w,
-            ./images/portfolio8_676.jpg  676w,
-            ./images/portfolio8_900.jpg  900w
-            " 
-            alt="Проект LAB"            
-            sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw"
-            >
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. In, aut veniam itaque est laudantium sed.</p></div><div class="about-work"><h3>Проект LAB</h3>
-                    <p>Маркетинг</p></div></li>
-            <li class="example animation"><div class="large-descr">
-                <img 
-            src="./images/portfolio9_450.jpg"
-            srcset="
-            ./images/portfolio9_450.jpg  450w,
-            ./images/portfolio9_676.jpg  676w,
-            ./images/portfolio9_900.jpg  900w
-            " 
-            alt="Growing Business"            
-            sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw"
-            >
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. In, aut veniam itaque est laudantium sed.</p></div><div class="about-work"><h3>Growing Business</h3>
-                    <p>Приложение</p></div></li>
-</ul>
-</div>
-</section>
-
+      </section>
     </main>
     <footer>
-        <div class="container flexbox-footer">
-            <div class="find-us">
-                <div class="contact-us">
-                    <p class="footer-logo"><span>Web</span>Studio</p>
-                    <address>
-                    <p>   г. Киев, пр-т Леси Украинки, 26
-                    </p>
-                    </address>
-                    <p><a href="mailto:info@example.com" class="animation">info@example.com</a></p>
-                    <p><a href="tel:380991111111" class="animation">+38 099 111 11 11</a>
-                    </p>
-                </div>
-                <div class="footer-social"> 
-                    <p class="footer-head">Присоединяйтесь</p>
-                    <ul class="social list">
-                        <li class="social-icon"><button class="but-icon animation"><svg>
-                            <use href="./images/sprite.svg#icon-facebook"></use>
-                        </svg></button></li>
-                        <li class="social-icon"><button class="but-icon animation"><svg>
-                            <use href="./images/sprite.svg#icon-instagram"></use>
-                        </svg></button></li>
-                        <li class="social-icon"><button class="but-icon animation"><svg>
-                            <use href="./images/sprite.svg#icon-linkedin"></use>
-                        </svg></button></li>
-                        <li class="social-icon"><button class="but-icon animation"><svg>
-                            <use href="./images/sprite.svg#icon-twitter"></use>
-                        </svg></button></li>
-                    </ul>
-                </div>
-                
-            </div>
-            <div class="subscribe">
-                <p class="footer-head">Подпишитесь на рассылку</p>
-                <form class="form-subscribe">
-                <input type="email" name="subscribe" class="input-subscribe" placeholder="E-mail">
-                <button class="btn-subscribe">Подписаться<svg>
-                    <use href="./images/sprite.svg#icon-icon-send"></use>
-                </svg></button>
-                </form>
-                                </div>
+      <div class="container flexbox-footer">
+        <div class="find-us">
+          <div class="contact-us">
+            <p class="footer-logo"><span>Web</span>Studio</p>
+            <address>
+              <p>г. Киев, пр-т Леси Украинки, 26</p>
+            </address>
+            <p>
+              <a href="mailto:info@example.com" class="animation"
+                >info@example.com</a
+              >
+            </p>
+            <p>
+              <a href="tel:380991111111" class="animation">+38 099 111 11 11</a>
+            </p>
+          </div>
+          <div class="footer-social">
+            <p class="footer-head">Присоединяйтесь</p>
+            <ul class="social list">
+              <li class="social-icon">
+                <button class="but-icon animation">
+                  <svg>
+                    <use href="./images/sprite.svg#icon-facebook"></use>
+                  </svg>
+                </button>
+              </li>
+              <li class="social-icon">
+                <button class="but-icon animation">
+                  <svg>
+                    <use href="./images/sprite.svg#icon-instagram"></use>
+                  </svg>
+                </button>
+              </li>
+              <li class="social-icon">
+                <button class="but-icon animation">
+                  <svg>
+                    <use href="./images/sprite.svg#icon-linkedin"></use>
+                  </svg>
+                </button>
+              </li>
+              <li class="social-icon">
+                <button class="but-icon animation">
+                  <svg>
+                    <use href="./images/sprite.svg#icon-twitter"></use>
+                  </svg>
+                </button>
+              </li>
+            </ul>
+          </div>
         </div>
-        <a href="test.html"></a>
-   </footer>
-   <script src="./js/menu.js"></script>
-</body>
+        <div class="subscribe">
+          <p class="footer-head">Подпишитесь на рассылку</p>
+          <form class="form-subscribe">
+            <input
+              type="email"
+              name="subscribe"
+              class="input-subscribe"
+              placeholder="E-mail"
+            />
+            <button class="btn-subscribe">
+              Подписаться<svg>
+                <use href="./images/sprite.svg#icon-icon-send"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
+      </div>
+      <a href="test.html"></a>
+    </footer>
+    <script src="./js/menu.js"></script>
+  </body>
 </html>
