@@ -1,164 +1,162 @@
 .backdrop {
-    opacity: 1;
+  opacity: 1;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+  z-index: 2;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  overflow: scroll;
+}
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 528px;
+  // height: 581px;
+  padding: 40px;
+  background-color: $white;
+  transform: translate(-50%, -50%) scale(1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  // overflow: scroll;
+  pointer-events: initial;
+
+  @media screen and (max-width: 480px) {
     width: 100%;
-    height: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    background-color: rgba(0, 0, 0, 0.5);
-    overflow: hidden;
-    z-index: 2;
-    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    overflow: scroll;
-
   }
-  .modal {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 528px;
-    // height: 581px;
-    padding: 40px;
-    background-color: $white;
-    transform: translate(-50%, -50%) scale(1);
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    // overflow: scroll;
-    pointer-events: initial;
 
-    @media screen and (max-width: 480px){
-      width: 100%;
-          }
+  @media screen and (min-width: 480px) {
+    width: 450px;
+  }
 
-          @media screen and (min-width: 480px){
-            width: 450px;
-                }
-
-                // @media screen and (min-width: 768px){
-                //   width: 100%;
-                //   overflow: scroll;
-                //       }
+  // @media screen and (min-width: 768px){
+  //   width: 100%;
+  //   overflow: scroll;
+  //       }
 
   .backdrop.is-hidden & {
     transform: translate(-50%, -50%) scale(0);
   }
 }
-  button.close-modal {
-    width: 30px;
-    height: 30px;
-    position: absolute;
-    top: 8px;
-    right: 8px;
-    padding: 5px 10px;
-    color: $black;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    border-radius: 50%;
-    cursor: pointer;
-    background-color: $white;
-  }
-  .close-modal svg {
-    width: 11px;
-    height: 11px;
-    transform: translate(-1px, 1px);
-  }
-  .close-modal:hover svg,
-  .close-modal:focus svg {
-    fill: $blue;
-  }
-  
-  .backdrop.is-hidden {
-    opacity: 0;
-    pointer-events: none;
-    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  .modal-head {
-    font-style: normal;
-    font-weight: bold;
-    font-size: 20px;
-    line-height: 23px;
-    text-align: center;
-    letter-spacing: 0.03em;
-    color: #212121;
-  }
-  
+button.close-modal {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  padding: 5px 10px;
+  color: $black;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  cursor: pointer;
+  background-color: $white;
+}
+.close-modal svg {
+  width: 11px;
+  height: 11px;
+  transform: translate(-1px, 1px);
+}
+.close-modal:hover svg,
+.close-modal:focus svg {
+  fill: $blue;
+}
 
-  .field {
-    position: relative;
-  }
-  .field label {
-    position: absolute;
-    top:-10px;
-    left:0px;
-    height: 50px;
-    font-size:12px;
-  }
-  .field-checkbox label {
-    // position: absolute;
-    // top:-10px;
-    // left:0px;
-    height: 50px;
-    font-size:12px;
-  }
-  .field:nth-child(1) {
-    margin-top: 12px;
-  }
-  .field input, .field textarea {
-    width: 100%;
-    margin-top: 14px;
-    margin-bottom: 14px;
-    font-size: 14px;
-    border: 1px solid rgba(33, 33, 33, 0.2);
-    border-radius: 4px;
+.backdrop.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal-head {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+}
 
-   
-&:focus{
-      outline-color: $blue;
+.field {
+  position: relative;
+}
+.field label {
+  position: absolute;
+  top: -10px;
+  left: 0px;
+  height: 50px;
+  font-size: 12px;
+}
+.field-checkbox label {
+  // position: absolute;
+  // top:-10px;
+  // left:0px;
+  height: 50px;
+  font-size: 12px;
+}
+.field:nth-child(1) {
+  margin-top: 12px;
+}
+.field input,
+.field textarea {
+  width: 100%;
+  margin-top: 14px;
+  margin-bottom: 14px;
+  font-size: 14px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
 
-      &::placeholder{
-        color:transparent;
-      }
+  &:focus {
+    outline-color: $blue;
+
+    &::placeholder {
+      color: transparent;
     }
   }
-  .field > input {
-    height: 40px;
-    padding: 11px 35px;
-  }
-  .field textarea::placeholder {
-    font-size: 12px;
-  }
-  .field svg {
-    width: 12px;
-    height: 12px;
-    position: absolute;
-    bottom: 0px;
-    left: 15px;
-    z-index: 3;
-  }
-  .field textarea {
-    padding: 11px 15px;
-    height: 120px;
-    resize: none;
-  }
-  .field-checkbox input {
-    margin-right: 8px;
-    padding-top: 10px;
-    vertical-align: middle;
-  }
-  .field-checkbox label {
-    display: inline-block;
-  }
-  .field-checkbox input {
-    width: 16px;
-    height: 15px;
-    cursor: pointer;
-  
+}
+.field > input {
+  height: 40px;
+  padding: 11px 35px;
+}
+.field textarea::placeholder {
+  font-size: 12px;
+}
+.field svg {
+  width: 12px;
+  height: 12px;
+  position: absolute;
+  bottom: 0px;
+  left: 15px;
+  z-index: 3;
+}
+.field textarea {
+  padding: 11px 15px;
+  height: 120px;
+  resize: none;
+}
+.field-checkbox input {
+  margin-right: 8px;
+  padding-top: 10px;
+  vertical-align: middle;
+}
+.field-checkbox label {
+  display: inline-block;
+}
+.field-checkbox input {
+  width: 16px;
+  height: 15px;
+  cursor: pointer;
+
   &::after {
     content: "";
     display: block;
     width: 16px;
     height: 15px;
     background-image: url(../images/icons/bird1.svg);
-    background-color:$blue;
-    background-repeat: no-repeat;;
+    background-color: $blue;
+    background-repeat: no-repeat;
     background-position: 2px 2px;
     opacity: 0;
     /* transition: 250ms; */
@@ -170,32 +168,36 @@
     background-color: #5da9e7;
   }
 }
-  .btn-modal {
-    display: block;
-    margin: 30px auto 0px;
-    width: 200px;
-    height: 50px;
-    background-color: $blue;
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 16px;
-    line-height: 30px;
-    text-align: center;
-    letter-spacing: 0.06em;
-    padding: 10px 30px;
-    color: $white;
-    border:none;
-    border-radius: 4px;
-    cursor: pointer;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  }
+.btn-modal {
+  display: block;
+  margin: 30px auto 0px;
+  width: 200px;
+  height: 50px;
+  background-color: $blue;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 30px;
+  text-align: center;
+  letter-spacing: 0.06em;
+  padding: 10px 30px;
+  color: $white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
 
-  .field-checkbox a {
-    color: $blue;
-  }
-  input:focus + label svg,
-  textarea#comment:focus + label svg {
-    fill: $blue;
-  }
+.field-checkbox a {
+  color: $blue;
+}
+input:focus + label svg,
+textarea#comment:focus + label svg {
+  fill: $blue;
+}
 
+.btn-subscribe a {
+  text-decoration: none;
+  color: $white;
+}
